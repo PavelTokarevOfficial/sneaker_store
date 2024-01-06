@@ -1,30 +1,25 @@
 <template>
-  <div class="scene">
-    <Spline
-        :scene="scene"
-
-    />
+  <div class="container-fluid px-2 py-2">
+    <Header/>
+    <router-view/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import {defineComponent} from 'vue';
-import Spline from 'spline-vue/v3';
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    Spline,
-  },
-  data() {
-    return {
-      scene: 'https://prod.spline.design/5N00RXIsFyO9MIFf/scene.splinecode',
-    };
-  },
-});
+import Footer from './components/Footer.vue'
+import Header from './components/Header.vue'
+export default {
+  components:{
+    Footer,
+    Header,
+  }
+}
 </script>
 
-<style scoped lang="scss">
-
+<style lang="scss">
+#app{
+  min-height: 100vh;
+}
 </style>
 

@@ -1,11 +1,14 @@
-<script setup>
-
-</script>
-
 <template>
-
+  <footer class="text-center">
+    Footer
+  </footer>
 </template>
 
-<style scoped lang="scss">
+<script></script>
 
+<style scoped lang="scss">
+footer{
+  height: 50vh;
+  background: #157347;
+}
 </style>
